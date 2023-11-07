@@ -1,0 +1,27 @@
+{
+  "name": "react-in-depth",
+  "version": "1.0.0",
+  "description": "React in depth",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AISHWARYAKHATRI/Core-React.git"
+  },
+  "keywords": [],
+  "author": "Aishwarya Khatri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AISHWARYAKHATRI/Core-React/issues"
+  },
+  "homepage": "https://github.com/AISHWARYAKHATRI/Core-React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
