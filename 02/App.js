@@ -1,39 +1,18 @@
-// "use strict";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World using React createElement"
-);
-// a = 10;
-// console.log(a);
-// function a(a, b, ...args) {
-//   console.log(args.length);
-// }
+const heading = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", {}, "I was nested inside a div"),
+  React.createElement("div", {}, "We are siblings btw"),
+  React.createElement("div", {}, "I am too"),
+]);
+const jsxHeading = <h1 className="hello ">{heading}</h1>;
 
-// a(1, 2, 3, 4, 5);
+const HeadingComponent = () => {
+  return <h1>React Functional Component</h1>;
+};
+console.log(jsxHeading);
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  [
-    React.createElement("div", { id: "child" }, [
-      React.createElement(
-        "h1",
-        { display: "flex", alignitems: "center", justifycontent: "center" },
-        "Nested Rendering"
-      ),
-      heading,
-    ]),
-    React.createElement("div", { id: "child" }, [
-      React.createElement("h1", {}, "Nested Rendering"),
-      heading,
-    ]),
-  ] // sibling nodes
-);
-console.log(parent);
-const heading1 = React.createElement("h2", {}, "Hello World using React");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(jsxHeading);

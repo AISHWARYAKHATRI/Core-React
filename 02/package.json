@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "React in depth",
   "scripts": {
+    "start": "parcel index.htm",
+    "build": "parcel build index.htm",
     "test": "jest"
   },
   "repository": {
@@ -23,5 +25,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 Firefox version"
+  ]
 }
