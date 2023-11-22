@@ -19,3 +19,4 @@
 - Different dev and prod bundles
 
 - CRA will automatically have all the above features.
+- CRA automatically takes care of everything for you
