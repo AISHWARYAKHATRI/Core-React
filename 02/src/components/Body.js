@@ -36,6 +36,7 @@ let listOfRestaurantsJS = [
   },
 ];
 
+var obj;
 export const Body = () => {
   // local state variable - Super powerful variable
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
@@ -50,10 +51,10 @@ export const Body = () => {
   console.log("sdfsd");
 
   const fetchData = async () => {
-    const res = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0061051&lng=72.5164075&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const data = await res.json();
+    // const res = await fetch(
+    //   "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0061051&lng=72.5164075&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    // );
+    // const data = await res.json();
     setListOfRestaurant(resObj);
     setFilteredRestaurant(resObj);
   };
