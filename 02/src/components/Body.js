@@ -4,39 +4,6 @@ import RestaurantCard from "./RestaurantCard";
 import { resObj } from "../utils/mockData";
 import Shimmer from "./Shimmer";
 
-//  Normal JS variable
-let listOfRestaurantsJS = [
-  {
-    info: {
-      id: "114323",
-      name: "Iscon Thal",
-      cloudinaryImageId: "bd68ec66db6e8459145694c17f5aecde",
-      costForTwo: "₹200 for two",
-      cuisines: ["Gujarati", "Thalis", "Indian", "Sweets", "Desserts", "Jain"],
-      avgRating: 3,
-      avgRatingString: "3.5",
-      sla: {
-        deliveryTime: 26,
-      },
-    },
-  },
-  {
-    info: {
-      id: "405964",
-      name: "La Pino'z Pizza",
-      cloudinaryImageId: "xpecpjwq215o4grwtpk2",
-      costForTwo: "₹300 for two",
-      cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
-      avgRating: 4.1,
-      avgRatingString: "4.1",
-      sla: {
-        deliveryTime: 31,
-      },
-    },
-  },
-];
-
-var obj;
 export const Body = () => {
   // local state variable - Super powerful variable
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
