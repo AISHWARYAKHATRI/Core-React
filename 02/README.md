@@ -20,3 +20,10 @@
 
 - CRA will automatically have all the above features.
 - CRA automatically takes care of everything for you
+
+# Optimising the app
+
+- Follow the single responsibility principle
+- If a component has a multiple things to dom break it down into components
+- Always write code in modular fashion
+- Modularity - Breaking down code into modules which makes it maintainable and testable
