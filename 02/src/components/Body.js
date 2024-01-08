@@ -3,6 +3,7 @@ import { useEffect, useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { resObj } from "../utils/mockData";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 export const Body = () => {
   // local state variable - Super powerful variable
@@ -10,7 +11,8 @@ export const Body = () => {
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
 
   const [searchText, setSearchText] = useState("");
-
+  const onlineStatus = useOnlineStatus();
+  console.log(onlineStatus);
   useEffect(() => {
     fetchData();
   }, []);
@@ -26,8 +28,16 @@ export const Body = () => {
     setFilteredRestaurant(resObj);
   };
 
-  if (listOfRestaurants.length === 0) {
-    return <Shimmer />;
+  // if (listOfRestaurants.length === 0) {
+  //   return <Shimmer />;
+  // }
+
+  if (onlineStatus === false) {
+    return (
+      <h1>
+        Looks like you're offline!! Please check your internet connection!
+      </h1>
+    );
   }
 
   return listOfRestaurants.length === 0 ? (
