@@ -1,6 +1,6 @@
 import { useEffect, useState, useEffect } from "react";
 
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPrompotedLabel } from "./RestaurantCard";
 import { resObj } from "../utils/mockData";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -13,6 +13,9 @@ export const Body = () => {
   const [searchText, setSearchText] = useState("");
   const onlineStatus = useOnlineStatus();
   console.log(onlineStatus);
+
+  const RestaurantCardPromoted = withPrompotedLabel(RestaurantCard);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -79,9 +82,14 @@ export const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {filteredRestaurants?.map((res) => (
-          <RestaurantCard resData={res.info} key={res.info.id} />
-        ))}
+        {filteredRestaurants?.map((res) => {
+          // if the restaurant is promoted then add a prompoted label to it
+          if (res?.info?.promoted === true)
+            return (
+              <RestaurantCardPromoted resData={res.info} key={res.info.id} />
+            );
+          else return <RestaurantCard resData={res.info} key={res.info.id} />;
+        })}
       </div>
     </div>
   );

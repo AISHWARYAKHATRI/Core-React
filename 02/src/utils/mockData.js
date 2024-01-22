@@ -17,6 +17,7 @@ export const resObj = [
     info: {
       id: "405964",
       name: "La Pino'z Pizza",
+      promoted: true,
       cloudinaryImageId: "xpecpjwq215o4grwtpk2",
       costForTwo: "₹300 for two",
       cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
@@ -34,6 +35,7 @@ export const resObj = [
       cloudinaryImageId: "bb7ae131544c7d37e10fc5faf76f09d6",
       locality: "Prahlad Nagar",
       areaName: "Prahlad Nagar",
+      promoted: true,
       costForTwo: "₹400 for two",
       cuisines: ["Burgers", "Beverages", "Cafe", "Desserts"],
       avgRating: 4.1,
@@ -178,6 +180,7 @@ export const resObj = [
     info: {
       id: "41119",
       name: "Burger King",
+      promoted: true,
       cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
       locality: "Venus Atlantis",
       areaName: "Prahlad Nagar",
@@ -251,6 +254,7 @@ export const resObj = [
     info: {
       id: "137733",
       name: "Domino's Pizza",
+      promoted: true,
       cloudinaryImageId: "kisil2kq3ueppal5nch8",
       locality: "VENUS PARK HEIGHT AHMEDABAD GUJARAT",
       areaName: "Vejalpur",
@@ -442,6 +446,7 @@ export const resObj = [
       id: "37650",
       name: "Pizza Hut",
       cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      promoted: true,
       locality: "Prahlad Nagar",
       areaName: "Prahlad Nagar",
       costForTwo: "₹350 for two",
@@ -854,6 +859,7 @@ export const resObj = [
     info: {
       id: "40827",
       name: "Subway",
+      promoted: true,
       cloudinaryImageId: "1ace5fa65eff3e1223feb696c956b38b",
       locality: "100 ft Road",
       areaName: "Satellite",
@@ -928,6 +934,7 @@ export const resObj = [
     info: {
       id: "36660",
       name: "The Belgian Waffle Co.",
+      promoted: true,
       cloudinaryImageId: "846dab8cca3c56a482d7cbcda0dd0eb9",
       locality: "Satellite",
       areaName: "Ramdev Nagar",
@@ -1446,6 +1453,7 @@ export const resObj = [
     info: {
       id: "40186",
       name: "Mirch Masala",
+      promoted: true,
       cloudinaryImageId: "anblj9x3951bb4zskuff",
       locality: "Prahlad Nagar",
       areaName: "Prahlad Nagar",
