@@ -7,6 +7,7 @@ const Demo2 = () => {
   /**
    * not like => ref = 0
    * like => ref = { current: }
+   * Ref will hold the value between states
    */
   const ref = useRef(0);
   const intervalRef = useRef(null);
